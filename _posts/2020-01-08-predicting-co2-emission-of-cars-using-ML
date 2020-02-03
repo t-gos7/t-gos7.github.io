@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Predicting CO2 emmision of cars using Machine learning"
+date: 2020-01-08
+---
+
+
 ## Predicting fuel consumption and CO2 emission of cars using Multiple Linear Regression
 
 In this project, I have created a regression model which predicts CO2 emission and fuel consumption depending on
