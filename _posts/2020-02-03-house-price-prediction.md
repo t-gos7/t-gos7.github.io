@@ -10,6 +10,7 @@ I have used *Linear regression* for predicting house prices. Linear regression i
 ### Steps 
 #### 1. Load the data
 We will use `Pandas` as `pd` to load the `csv` file. There are 6 attributes in the file - `LotArea`(total area), `OverallQual`(a rating from 1-10 range), `YearBuilt`(year of establishment), `FullBath`(number of full bathroom), `Bedroom`(number of bedrooms) and `SalePrice`(selling price). We are going to build a model to predict the value of `SalePrice`, given other independent attributes. There are 1460 datums. 
+
 ```python 3
 dataset = pd.read_csv("house_data.csv")
 #print(dataset.shape)
@@ -23,6 +24,7 @@ array=dataset.values
 X = array[:,:5]
 Y = array[:,5] 
 ```
+
 #### 2. Preprocess the data
 To drop the datums which contains null value and maybe outlier(add error to the prediction model), we need to choose the datums we are going to keep to build the model with. This step is very crucial in order to make a good model. 
 
