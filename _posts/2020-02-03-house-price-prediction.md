@@ -40,13 +40,13 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_s
 There is another method to split the training and testing data. It's **K-fold cross validation**. We will pass a `k` value and the data will be devided into **k** equal subsets. Out of which, `(k-1)` parts will be used for training purpose and the one left will be used for testing purpose. Each time one part of **k** parts will be used for test purpose and rest will be used for training purpose and the best split will be chosed(according to the validation accuracy) for building the model. 
 #### 4. Fit the data on simple regression model 
 I have used `LinearRegression` for prdicting house price. 
-```python 3
+```
 reg = linear_model.LinearRegression()
 reg = reg.fit(X_train,Y_train)
 predictions=reg.predict(X_test)       # Predicts outcome(here house price) for the test dataset 
 ```
 #### 5. Predict accuracy 
-```python 3
+```
 accuracy = reg.score(X_test, Y_test)  # Finds the residual sum squared error, i.e; (1-u/v) where u = sum((y_test - y_pred)^2)
 print("Accuracy = ",accuracy)         # and v is sum(( y_test - mean(y_test) )^2) 
 ```
