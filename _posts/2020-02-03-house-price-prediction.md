@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tarit Goswami, Software Developer - House Price Prediction"
+title: "House Price Prediction using Machine learning"
 date: 2020-02-03
 ---
 
