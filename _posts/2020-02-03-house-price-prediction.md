@@ -11,7 +11,7 @@ I have used *Linear regression* for predicting house prices. Linear regression i
 #### 1. Load the data
 We will use `Pandas` as `pd` to load the `csv` file. There are 6 attributes in the file - `LotArea`(total area), `OverallQual`(a rating from 1-10 range), `YearBuilt`(year of establishment), `FullBath`(number of full bathroom), `Bedroom`(number of bedrooms) and `SalePrice`(selling price). We are going to build a model to predict the value of `SalePrice`, given other independent attributes. There are 1460 datums. 
 
-```python 3
+```
 dataset = pd.read_csv("house_data.csv")
 #print(dataset.shape)
 #print(dataset.head(10))
@@ -31,7 +31,7 @@ To drop the datums which contains null value and maybe outlier(add error to the 
 #### 3. Split the dataset into training and testing data
 We need to split the data into training and testing data. I have used `train_test_split` from `sklearn.model_selection`. It takes the `X`,`Y`, `test_size` and `random_state` as parameters.The `test_size` takes value between `0.0` and `1.0`. It's the proportion of data we need to use for testing our model, the rest will be used for training the model. 
 
-```python 3
+```
 validation_size = 0.20
 seed = 7
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size = validation_size, random_state = seed)
